@@ -1,0 +1,108 @@
+module.exports = {
+    apps : [
+        {
+            name: "Phincon Challenge | #001 | Proxy",
+            script: "./app.js",
+            watch: true,
+            env: {
+                "NODE_ENV": "development",
+                "DB_NAME": "phinconchallenge",
+                "DB_USER": "root",
+                "DB_PASSWORD": "Empingtod-12",
+                "DB_HOST": "127.0.0.1",
+                "DB_PORT": 3306,
+                "PROXY_PORT": 3333,
+                "CLIENT_CATCH_POKEMON_PORT": 30001,
+                "CLIENT_RELEASE_POKEMON_PORT": 30002,
+                "CLIENT_RENAME_POKEMON_PORT": 30003,
+            },
+            env_production: {
+                "NODE_ENV": "production",
+                "DB_NAME": "phinconchallenge",
+                "DB_USER": "root",
+                "DB_PASSWORD": "Empingtod-12",
+                "DB_HOST": "127.0.0.1",
+                "DB_PORT": 3306,
+                "PROXY_PORT": 3333,
+                "CLIENT_CATCH_POKEMON_PORT": 30001,
+                "CLIENT_RELEASE_POKEMON_PORT": 30002,
+                "CLIENT_RENAME_POKEMON_PORT": 30003,
+            }
+        },
+        {
+            name: "Phincon Challenge | #002 | Pokemon | catchPokemon",
+            script: "./services/pokemon/catchPokemon/index.js",
+            watch: true,
+            env: {
+                "NODE_ENV": "development",
+                "DB_NAME": "phinconchallenge",
+                "DB_USER": "root",
+                "DB_PASSWORD": "Empingtod-12",
+                "DB_HOST": "127.0.0.1",
+                "DB_PORT": 3306,
+                "PROXY_PORT": 3333,
+                "CLIENT_CATCH_POKEMON_PORT": 30001,
+            },
+            env_production: {
+                "NODE_ENV": "production",
+                "DB_NAME": "phinconchallenge",
+                "DB_USER": "root",
+                "DB_PASSWORD": "Empingtod-12",
+                "DB_HOST": "127.0.0.1",
+                "DB_PORT": 3306,
+                "PROXY_PORT": 3333,
+                "CLIENT_CATCH_POKEMON_PORT": 30001,
+            }
+        },
+        {
+            name: "Phincon Challenge | #003 | Pokemon Client | releasePokemon",
+            script: "./services/pokemon/releasePokemon/index.js",
+            watch: true,
+            env: {
+                "NODE_ENV": "development",
+                "DB_NAME": "phinconchallenge",
+                "DB_USER": "root",
+                "DB_PASSWORD": "Empingtod-12",
+                "DB_HOST": "127.0.0.1",
+                "DB_PORT": 3306,
+                "PROXY_PORT": 3333,
+                "CLIENT_RELEASE_POKEMON_PORT": 30002,
+            },
+            env_production: {
+                "NODE_ENV": "production",
+                "DB_NAME": "phinconchallenge",
+                "DB_USER": "root",
+                "DB_PASSWORD": "Empingtod-12",
+                "DB_HOST": "127.0.0.1",
+                "DB_PORT": 3306,
+                "PROXY_PORT": 3333,
+                "CLIENT_RELEASE_POKEMON_PORT": 30002,
+            }
+        },
+        {
+            name: "Phincon Challenge | #004 | Pokemon Client | renamePokemon",
+            script: "./services/pokemon/renamePokemon/index.js",
+            watch: true,
+            env: {
+                "NODE_ENV": "development",
+                "DB_NAME": "phinconchallenge",
+                "DB_USER": "root",
+                "DB_PASSWORD": "Empingtod-12",
+                "DB_HOST": "127.0.0.1",
+                "DB_PORT": 3306,
+                "PROXY_PORT": 3333,
+                "CLIENT_RENAME_POKEMON_PORT": 30003,
+            },
+            env_production: {
+                "NODE_ENV": "production",
+                "DB_NAME": "phinconchallenge",
+                "DB_USER": "root",
+                "DB_PASSWORD": "Empingtod-12",
+                "DB_HOST": "127.0.0.1",
+                "DB_PORT": 3306,
+                "PROXY_PORT": 3333,
+                "CLIENT_RENAME_POKEMON_PORT": 30003,
+            }
+        },
+    ]
+}
